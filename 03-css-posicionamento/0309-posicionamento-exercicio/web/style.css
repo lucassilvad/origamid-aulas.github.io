@@ -1,0 +1,111 @@
+body {
+  background: #f7f7f7;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  margin-top: 60px;
+  display: grid;
+  gap: 60px;
+  justify-items: center;
+}
+
+.header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.menu a {
+  background: #ffffff;
+  padding: 15px 30px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+}
+
+.dec {
+  width: 60px;
+  height: 4px;
+  background: #e21;
+  position: relative;
+  top: -30px;
+  right: -400px;
+}
+
+.intro {
+  display: grid;
+  text-align: right;
+  place-content: center;
+}
+
+.botao {
+  background: #ee2211;
+  padding: 15px 30px;
+  place-self: end;
+  border-radius: 4px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.vantagens {
+  display: grid;
+  place-content: center end;
+  padding: 40px;
+  color: #c6c6c6;
+  font-size: 64px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.icones {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 40px;
+}
+
+.footer {
+  background: #fff;
+  padding: 40px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais */
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.b {
+  background: #fff;
+  padding: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
