@@ -4,6 +4,7 @@ body {
 
 h2 {
   color: black !important;
+  border-top: 2px solid blue;
 }
 
 #produtos {
