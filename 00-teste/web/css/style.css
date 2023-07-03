@@ -1,0 +1,58 @@
+:root {
+  --w: #ffffff;
+  --c1: #f7f7f7;
+  --c2: #cccccc;
+  --c3: #707070;
+  --c4: #404040;
+  --c5: #2e2e2e;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+img {
+  display: block;
+  width: 200px;
+  height: 220px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--c2);
+}
+
+/* Gerais */
+
+body {
+  background: var(--c5);
+  color: var(--w);
+  display: grid;
+  justify-content: center;
+}
+
+.aulas {
+  border-radius: 4px;
+  padding: 40px;
+  background: var(--c4);
+  max-width: 1000px;
+  margin: 80px 0 80px 0;
+}
+
+.aulas-lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 80px;
+  text-align: center;
+}
+
+h1 {
+  font-family: poppins;
+  font-size: 8rem;
+  text-align: center;
+}
+
+a {
+  font-family: roboto;
+}
