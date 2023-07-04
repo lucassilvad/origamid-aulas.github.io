@@ -84,8 +84,8 @@ h1::after {
 }
 
 li:hover {
-  /* margin-top: 0px; */
-  border: 10px solid transparent;
+  margin-top: 0px;
+  /* border: 10px solid transparent; */
 }
 
 @media (max-width: 1020px) {
