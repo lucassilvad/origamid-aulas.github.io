@@ -37,15 +37,17 @@ body {
   width: 60px;
   height: 4px;
   background: #e21;
-  position: relative;
-  top: -30px;
-  right: -400px;
+  position: absolute;
+  top: 30px;
+  right: -30px;
 }
 
 .intro {
   display: grid;
   text-align: right;
   place-content: center;
+  gap: 20px;
+  position: relative;
 }
 
 .botao {
@@ -62,7 +64,7 @@ body {
   place-content: center end;
   padding: 40px;
   color: #c6c6c6;
-  font-size: 64px;
+  font-size: 40px;
   text-align: right;
   text-transform: uppercase;
 }
