@@ -2,7 +2,38 @@
   --c12: #000000;
   --c11: #111111;
   --c10: #2e2e2e;
+  --c5: #b3b3b3;
   --w: #fff;
+}
+
+:root {
+  --p1: #ffbb00;
+  --gradiente: #ffbf00, #f2a60c;
+  --gradiente-escuro: #ffb60b, #e59317;
+}
+
+/* Gerais */
+
+h1,
+p,
+ul {
+  margin: 0px;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
@@ -87,15 +118,65 @@ body {
   }
 }
 
-/* Gerais */
-
-ul {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
+.introducao-bg {
+  background: var(--c12);
+  color: var(--w);
+  box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.introducao-conteudo {
+  align-self: end;
+  padding-bottom: 80px;
+}
+
+.introducao-conteudo h1 {
+  color: var(--w);
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.125;
+  margin-bottom: 32px;
+}
+
+.introducao-conteudo p {
+  color: var(--c5);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.25rem;
+  margin-bottom: 20px;
+}
+
+.detalhe-t {
+  color: var(--p1);
+}
+
+.introducao a {
+  color: var(--p-5, #320);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.33;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  background: linear-gradient(var(--gradiente));
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.introducao a:hover {
+  background: linear-gradient(var(--gradiente-escuro));
 }
