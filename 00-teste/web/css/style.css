@@ -16,15 +16,19 @@ ul {
 }
 
 li {
-  margin: 0px;
+  /* width: 160px; */
+  /* margin: 0px; */
   margin-top: 10px;
   transition: 0.3s;
+  padding: 20px;
+  border-bottom: 8px solid transparent;
+  /* background: blue; */
 }
 
 img {
   display: block;
-  width: 200px;
-  height: 220px;
+  max-width: 100%;
+  height: auto;
   margin-bottom: 8px;
 }
 
@@ -46,7 +50,7 @@ body {
 
 h1 {
   font-family: poppins;
-  font-size: 8rem;
+  font-size: 7.5rem;
   text-align: center;
   margin-bottom: 20px;
   color: var(--w);
@@ -55,7 +59,7 @@ h1 {
 h1::after {
   content: "";
   display: block;
-  width: 800px;
+  max-width: 80%;
   height: 8px;
   background: var(--c4);
   border-radius: 4px;
@@ -64,39 +68,37 @@ h1::after {
 
 .aulas {
   border-radius: 4px;
-  padding: 40px 0px;
+  padding: 40px 80px;
   background: var(--c4);
   margin: 80px auto 80px auto;
-}
+  max-width: 100%;
 
-.aulas08 {
-  padding: 40px;
 }
 
 .aulas-lista {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
   text-align: center;
-  justify-content: center;
-  max-width: 1000px;
+  justify-items: center;
   color: var(--c2);
 }
 
-li:hover {
-  margin-top: 0px;
-  /* border: 10px solid transparent; */
+.last-child {
+  grid-column: 1 / -1;
 }
 
+li:hover {
+  border-radius: 4px;
+  margin-top: 0px;
+  background: var(--c5);
+}
+ 
 @media (max-width: 1020px) {
-  .aulas {
-    padding: 30px 60px;
-  }
+.aulas {
+  padding: 20px 40px;
+}
 
-  img {
-    width: 167px;
-    height: 176px;
-  }
 }
 
 @media (max-width: 820px) {
@@ -104,16 +106,8 @@ li:hover {
     font-size: 6rem;
   }
 
-  h1::after {
-    width: 600px;
-  }
-
-  .aulas {
-    padding: 15px 30px;
-  }
-
   .aulas-lista {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -121,9 +115,9 @@ li:hover {
   h1 {
     font-size: 5rem;
   }
-
-  h1::after {
-    width: 500px;
+  
+  .aulas-lista {
+    gap: 40px;
   }
 }
 
@@ -136,41 +130,45 @@ li:hover {
   h1::after {
     width: 400px;
   }
+
+  .aulas-lista {
+    grid-template-columns: 1fr;
+  }
+
+
+  li:hover {
+    /* margin-top: 0px;
+    border-bottom: 8px solid transparent; */
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 20px;
+    background: var(--c5);
+  }
+  
 }
 
-@media (max-width: 420px) {
+/* @media (max-width: 420px) {
   h1::after {
     width: 320px;
   }
 
-  .aulas-lista {
-    gap: 60px;
-  }
+} */
 
-  li {
-    font-size: 0.9rem;
-  }
-
-  img {
-    width: 150px;
-    height: 160px;
-  }
-}
-
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
   h1 {
     font-size: 2.5rem;
   }
-}
+} */
 
-@media (max-width: 340px) {
+/* @media (max-width: 340px) {
   h1::after {
     width: 240px;
   }
-}
+} */
 
-@media (max-width: 255px) {
+/* @media (max-width: 255px) {
+
   h1::after {
     width: 160px;
   }
-}
+} */
