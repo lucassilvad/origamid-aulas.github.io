@@ -2,7 +2,25 @@
 @import "./global/header.css";
 
 /* Utilidades */
+
 @import "./utilidades/componentes.css";
 
 /* Home */
+
 @import "./home/introducao.css";
+
+/* root */
+
+:root {
+  --c12: #000000;
+  --c11: #111111;
+  --c10: #2e2e2e;
+  --c5: #b3b3b3;
+  --w: #fff;
+}
+
+:root {
+  --p1: #ffbb00;
+  --gradiente: #ffbf00, #f2a60c;
+  --gradiente-escuro: #ffb60b, #e59317;
+}
