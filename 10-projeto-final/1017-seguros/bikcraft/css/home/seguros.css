@@ -1,5 +1,5 @@
 .seguros-bg {
-  background: var(--cor-11);
+  background: var(--c11);
 }
 
 .seguros {
@@ -16,10 +16,11 @@
 }
 
 .seguros-item {
-  background-color: var(--cor-12);
+  background: var(--c12);
   padding: 32px 32px 32px 60px;
+  border-radius: 4px;
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr auto ;
 }
 
 .seguros-item h3 {
@@ -59,6 +60,7 @@
 
 .seguros-item a {
   grid-column: 1/-1;
+
 }
 
 @media (max-width: 800px) {
