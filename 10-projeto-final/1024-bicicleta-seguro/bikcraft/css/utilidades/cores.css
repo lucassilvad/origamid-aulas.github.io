@@ -1,75 +1,97 @@
 :root {
-  --cor-0: #ffffff;
-  --cor-1: #f7f7f7;
-  --cor-2: #ededed;
-  --cor-3: #dedede;
-  --cor-4: #cccccc;
-  --cor-5: #b2b2b2;
-  --cor-6: #9c9c9c;
-  --cor-7: #717171;
-  --cor-8: #595959;
-  --cor-9: #404040;
-  --cor-10: #2e2e2e;
-  --cor-11: #111111;
-  --cor-12: #000000;
-  --cor-p1: #ffbb00;
-  --cor-p2: #e4a30b;
-  --cor-p3: #a66f00;
-  --cor-p4: #664400;
-  --cor-p5: #332200;
+  --c12: #000000;
+  --c11: #111111;
+  --c10: #2e2e2e;
+  --c9: #404040;
+  --c8: #595959;
+  --c7: #595959;
+  --c6: #9c9c9c;
+  --c5: #b3b3b3;
+  --c4: #cccccc;
+  --c3: #dedede;
+  --c2: #ededed;
+  --c1: #f7f7f7;
+  --c0: #ffffff;
+}
+
+:root {
+  --p5: #332200;
+  --p4: #664400;
+  --p3: #a66f00;
+  --p2: #e4a30b;
+  --p1: #ffbb00;
+  --gradiente: #ffbf00, #f2a60c;
+  --gradiente-escuro: #ffb60b, #e59317;
+}
+
+.cor-12 {
+  color: var(--c12);
+}
+
+.cor-11 {
+  color: var(--c11);
+}
+
+.cor-10 {
+  color: var(--c10);
+}
+
+.cor-9 {
+  color: var(--c9);
+}
+
+.cor-8 {
+  color: var(--c8);
+}
+
+.cor-7 {
+  color: var(--c7);
+}
+
+.cor-6 {
+  color: var(--c6);
+}
+
+.cor-5 {
+  color: var(--c5);
+}
+
+.cor-4 {
+  color: var(--c4);
+}
+
+.cor-3 {
+  color: var(--c3);
+}
+
+.cor-2 {
+  color: var(--c2);
+}
+
+.cor-1 {
+  color: var(--c1);
 }
 
 .cor-0 {
-  color: var(--cor-0);
+  color: var(--c0);
 }
-.cor-1 {
-  color: var(--cor-1);
-}
-.cor-2 {
-  color: var(--cor-2);
-}
-.cor-3 {
-  color: var(--cor-3);
-}
-.cor-4 {
-  color: var(--cor-4);
-}
-.cor-5 {
-  color: var(--cor-5);
-}
-.cor-6 {
-  color: var(--cor-6);
-}
-.cor-7 {
-  color: var(--cor-7);
-}
-.cor-8 {
-  color: var(--cor-8);
-}
-.cor-9 {
-  color: var(--cor-9);
-}
-.cor-10 {
-  color: var(--cor-10);
-}
-.cor-11 {
-  color: var(--cor-11);
-}
-.cor-12 {
-  color: var(--cor-12);
-}
+
 .cor-p1 {
-  color: var(--cor-p1);
+  color: var(--p1);
 }
+
 .cor-p2 {
-  color: var(--cor-p2);
+  color: var(--p2);
 }
+
 .cor-p3 {
-  color: var(--cor-p3);
+  color: var(--p3);
 }
+
 .cor-p4 {
-  color: var(--cor-p4);
+  color: var(--p4);
 }
+
 .cor-p5 {
-  color: var(--cor-p5);
+  color: var(--p5);
 }
