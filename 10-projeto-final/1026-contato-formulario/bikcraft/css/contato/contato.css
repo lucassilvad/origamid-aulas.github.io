@@ -2,6 +2,11 @@
   background: linear-gradient(var(--c11) 600px, var(--c1) 0px);
 }
 
+#contato .titulo-bg {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .contato {
   display: grid;
   grid-template-columns: 5fr 7fr;
@@ -35,9 +40,6 @@
 
 .contato-endereco p {
   margin-bottom: 8px;
-}
-
-.contato-meios {
 }
 
 .contato-meios a {
