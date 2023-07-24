@@ -1,8 +1,19 @@
-const circulo = document.querySelector("#circulo");
+const alturalargura = window.innerWidth;
+const alturaTela = window.innerHeight;
 
-function seguirMouse(event) {
-  circulo.style.top = event.y + "px";
-  circulo.style.left = event.x + "px";
+function coordenadaMouse(event) {
+  const coordenadas = {
+    x: event.x,
+    y: event.y,
+  }
+
+  console.log(coordenadas)
 }
 
-window.addEventListener("mousemove", seguirMouse);
+// window.addEventListener('mousemove', coordenadaMouse)
+
+function scroll() {
+  console.log(window.scrollY)
+}
+
+window.addEventListener('scroll', scroll)

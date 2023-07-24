@@ -1,0 +1,13 @@
+html {
+  cursor: none;
+}
+
+.circle {
+  width: 16px;
+  height: 16px;
+  background: #999;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+}

@@ -1,5 +1,6 @@
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -9,11 +10,15 @@ img {
 }
 
 #galeria ul {
-  padding: 0px;
-  margin: 0px;
-  list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  margin: 0;
+  padding: 0px;
   gap: 10px;
   margin-bottom: 10px;
+}
+
+#galeria li {
+  cursor: pointer;
 }
