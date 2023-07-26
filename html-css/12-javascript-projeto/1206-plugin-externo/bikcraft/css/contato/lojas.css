@@ -5,7 +5,6 @@
   padding-top: 120px;
   padding-bottom: 120px;
 }
-
 .lojas h2 {
   grid-column: 1/-1;
   margin-bottom: 60px;
@@ -36,7 +35,11 @@
 .lojas-dados {
   display: grid;
   gap: 8px;
-  border-left: 2px solid var(--cor-2);
+  border-left: 2px solid var(--c2);
+}
+
+.lojas-dados p,
+.lojas-dados a {
   padding-left: 12px;
 }
 
@@ -52,9 +55,11 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
   .lojas h2 {
     margin-bottom: 32px;
   }
+
   .lojas-conteudo {
     grid-template-columns: 1fr;
   }

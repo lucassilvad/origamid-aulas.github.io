@@ -1,6 +1,7 @@
 .perguntas {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  --padding: 120px;
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
 }
 
 .perguntas h2 {
@@ -13,7 +14,7 @@
 }
 
 .perguntas dl > div:nth-child(odd) {
-  background-color: var(--cor-1);
+  background-color: var(--c1);
 }
 
 .perguntas button {
@@ -22,10 +23,10 @@
   align-items: center;
   gap: 8px;
   cursor: pointer;
-  border: none;
-  background: none;
-  width: 100%;
-  text-align: left;
+border: none;
+background: none;
+width: 100%;
+text-align: left;
 }
 
 .perguntas button::before {
@@ -33,14 +34,16 @@
   display: inline-block;
   width: 12px;
   height: 8px;
-  background-color: var(--cor-p1);
+  background: var(--p1);
+  /* position: absolute;
+  left: -20px; */
 }
 
 .perguntas button::after {
   content: "";
   display: inline-block;
-  width: 14px;
-  height: 6px;
+  width: 12px;
+  height: 8px;
   background: url("../../img/icones/seta-abrir.svg");
   transition: 0.3s;
 }
@@ -58,6 +61,7 @@
   display: block;
 }
 
+
 .perguntas dd {
   padding-left: 20px;
   padding-top: 16px;
@@ -66,9 +70,9 @@
 
 @media (max-width: 800px) {
   .perguntas {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    --padding: 60px;
   }
+
   .perguntas h2 {
     margin-bottom: 40px;
   }

@@ -17,10 +17,10 @@ links.forEach(ativarLink);
 const parametros = new URLSearchParams(location.search);
 
 function ativarProduto(parametro) {
-  const elemento = document.getElementById(parametro);
-  if (elemento) {
-    elemento.checked = true;
-  }
+  const elemento = document.getElementById(parametro)
+  elemento.checked = true
+  console.log(elemento);
 }
 
-parametros.forEach(ativarProduto);
+parametros.forEach(ativarProduto)
+

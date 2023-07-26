@@ -1,5 +1,5 @@
 .header-bg {
-  background-color: var(--cor-12);
+  background-color: var(--c12);
 }
 
 .header {
@@ -19,8 +19,10 @@
 }
 
 .header-menu a {
+  color: var(--c0);
   display: inline-block;
   padding: 16px 0px;
+  font-size: 18px;
   position: relative;
 }
 
@@ -29,7 +31,7 @@
   display: block;
   height: 2px;
   width: 0px;
-  background: var(--cor-0);
+  background: var(--c0);
   margin-top: 4px;
   transition: 0.3s;
   position: absolute;
@@ -45,12 +47,12 @@
     gap: 20px;
   }
   .header-menu a {
-    background: var(--cor-11);
+    background: var(--c11);
     padding: 12px 16px;
     border-radius: 4px;
   }
   .header-menu a:hover {
-    background-color: var(--cor-10);
+    background-color: var(--c10);
   }
   .header a:after {
     display: none;
