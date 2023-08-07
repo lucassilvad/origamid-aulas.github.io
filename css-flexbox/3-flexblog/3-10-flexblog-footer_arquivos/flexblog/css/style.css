@@ -1,0 +1,424 @@
+:root {
+  --p1: #122ab2;
+  --p2: #2c70ff;
+
+  --c8: #a4a4a4;
+  --c5: #7c7c7c;
+  --c2: #f7f7f7;
+}
+
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  color: #222;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Superinfo */
+
+.superinfo-bg {
+  background: var(--p1);
+  color: white;
+}
+
+.superinfo {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+.superinfo p,
+.superinfo a {
+  margin: 0 10px 10px 10px;
+}
+
+/* Menu */
+
+.menu-bg {
+  background: var(--p2);
+}
+
+.menu {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 15px 0;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-logo a {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.menu-logo a,
+.nav li {
+  margin: 0 10px;
+}
+
+.menu-nav ul {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.menu-nav a {
+  font-size: 1.25rem;
+  display: block;
+  padding: 10px;
+}
+
+.menu-nav a::hover {
+  color: #122ab2;
+}
+
+/* Introdução */
+
+.introducao {
+  font-size: 3rem;
+  line-height: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 10px;
+}
+
+/* Sobre */
+
+.sobre {
+  border-top: 2px solid var(--p2);
+  border-bottom: 2px solid var(--p2);
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sobre-info {
+  flex: 2 1 300px;
+  margin: 0 10px;
+}
+
+.sobre-info h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.sobre-info {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  color: var(--c5);
+}
+
+.sobre-img {
+  flex: 1;
+  flex-basis: 160px;
+  margin: 0 10px;
+}
+
+/* Peodutos */
+
+.produtos {
+  max-width: 960px;
+  margin: 60px auto;
+}
+
+.produtos h1 {
+  font-size: 3rem;
+  margin: 0 10px 60px 10px;
+}
+
+.produtos-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+}
+
+.produtos-item {
+  flex: 1 1 175px;
+  margin: 10px;
+  min-width: 175px;
+}
+
+.produtos-item h2 {
+  background-color: #f7f7f7;
+  font-size: 3rem;
+  color: var(--c8);
+  padding: 60px 20px;
+}
+
+.purple {
+  border-top: 8px solid #ae81ff;
+}
+
+.pink {
+  border-top: 8px solid #f9265e;
+}
+
+.blue {
+  border-top: 8px solid #66c8eb;
+}
+
+/* Preço */
+
+.preco {
+  background: var(--c2);
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  border: solid white;
+  padding: 24;
+  margin: 0;
+}
+
+.preco-item {
+  flex: 1;
+  border: 4px solid white;
+  padding: 20px;
+  margin: 10px;
+  min-width: 260px;
+}
+
+.preco-item h2 {
+  font-size: 3rem;
+  color: var(--c8);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.preco-item span {
+  display: block;
+  max-width: 300px;
+  margin: 20px auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  padding: 10;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+}
+
+.preco-item sup {
+  font-size: 1.5rem;
+}
+
+.preco-item ul {
+  max-width: 300px;
+  margin: 20px auto;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--c5);
+}
+
+.preco-item li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.preco-item li::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: var(--p1);
+}
+
+.preco-item a {
+  display: block;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 4px solid #222;
+  padding: 15px 0;
+  max-width: 300px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .preco {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .preco-item:last-child {
+    order: -2;
+  }
+
+  .preco-item:nth-child(2) {
+    order: -1;
+  }
+}
+
+/* Qualidade */
+
+.qualidade {
+  max-width: 960px;
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 0;
+}
+
+.qualidade-item {
+  flex: 1 1 300px;
+}
+
+.qualidade-item h2 {
+  font-size: 2.25rem;
+  color: var(--c8);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qualidade-item h2::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 30px;
+  background: blue;
+}
+
+.qualidade-item:nth-of-type(3n + 1) h2:before {
+  background: #ae81ff;
+}
+
+.qualidade-item:nth-of-type(3n + 2) h2:before {
+  background: #f9265e;
+}
+
+.qualidade-item:nth-of-type(3n + 3) h2:before {
+  background: #66d9eb;
+}
+
+.qualidade-item p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: var(--c5);
+}
+
+/* Newsletter */
+
+.newsletter {
+  background: var(--c2);
+  padding: 60px calc(100px - 40px);
+  /* padding: 60px calc(100% - 960px) / 2; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsletter-info {
+  flex: 1 1 240px;
+  margin: 0 10px;
+}
+
+.newsletter-info h1 {
+  font-size: 3rem;
+  color: var(--c8);
+}
+
+.newsletter-info p {
+  font-size: 1.25rem;
+  font-style: italic;
+  max-width: 230px;
+  color: var(--c5);
+  margin-bottom: 10px;
+}
+
+.newsletter-form {
+  margin: 0 10px;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 2 1 260px;
+}
+
+.newsletter-form input {
+  flex: 3 1 200px;
+  font-size: 1.25rem;
+  color: var(--c2);
+  font-style: italic;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  border: 4px solid var(--p2);
+  background: transparent;
+  padding: 15 10px;
+  margin: 0px;
+  border-radius: 0px;
+  padding: 10px;
+}
+
+.newsletter-form button {
+  flex: 1 1 200px;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: var(--p2);
+  color: white;
+  margin: 0;
+  cursor: pointer;
+  border: 0px;
+  padding: 15px 20px;
+}
+
+@media (max-width: 600px) {
+  .newsletter-form button {
+    font-size: 1.5rem;
+  }
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  background: var(--p2);
+  height: 200px;
+  align-items: center;
+}
+
+.footer p {
+  flex: 1;
+  text-align: center;
+  font-size: 2.25rem;
+  color: #122ab2;
+}
