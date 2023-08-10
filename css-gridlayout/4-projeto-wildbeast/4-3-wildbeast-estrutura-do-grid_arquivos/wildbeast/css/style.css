@@ -1,15 +1,15 @@
 body,
-p,
 h1,
+p,
 ul,
 li,
 blockquote {
-  padding: 0px;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: 'Vollkorn', Georgia, serif;
+  font-family: "Vollkorn", Georgia, "Times New Roman", Times, serif;
 }
 
 li {
@@ -22,17 +22,19 @@ a {
 
 img {
   max-width: 100px;
+  height: auto;
+  display: block;
 }
 
-/* GRID GERAL */
+/* Grid Geral */
 
 .estrutura {
   display: grid;
   grid-template-columns: minmax(160px, 1fr) 3fr 300px;
   grid-template-areas:
-    'header header header'
-    'sidenav content anuncios'
-    'footer footer footer';
+    "header header header"
+    "sidenav content anuncios"
+    "footer footer footer";
 }
 
 .header {
