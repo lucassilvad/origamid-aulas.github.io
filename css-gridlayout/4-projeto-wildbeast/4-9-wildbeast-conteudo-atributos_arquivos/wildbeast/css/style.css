@@ -127,10 +127,10 @@ p {
   font-size: 1.2rem;
   line-height: 1.6;
   letter-spacing: -0.005rem;
-  color: rgba(0, 0, 0, .7);
+  color: rgba(0, 0, 0, 0.7);
 }
 
-.informações p + p{
+.informações p + p {
   margin-top: 30px;
 }
 
@@ -156,7 +156,7 @@ p {
 .caracteristicas {
   display: flex;
   gap: 30px;
-align-items: start;
+  align-items: start;
 }
 
 .caracteristicas > div {
@@ -171,7 +171,6 @@ align-items: start;
 .caracteristicas span {
   display: block;
   color: #b07dfb;
-
 }
 
 .numero {
@@ -186,6 +185,40 @@ align-items: start;
   border-radius: 0 0 5px 5px;
   position: relative;
   top: 2px;
+}
+
+.destaque {
+  font-size: 0.875rem;
+  color: #b07dfb;
+  max-width: 16rem;
+}
+
+.citacao,
+.atributos {
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0 rgba(44, 44, 44, 0.15);
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  align-self: start;
+}
+
+.citacao p {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 0 auto;
+  color: white;
+  max-width: 500px;
+}
+
+.atributos li {
+  color: white;
+  font-family: Courier, "Courier New", monospace;
+  font-size: 1.2rem;
+  padding: 15px;
+}
+
+.atributos li + li {
+  border-top: 2px solid #b07dfb;
 }
 
 /* ANÚNCIOS */
