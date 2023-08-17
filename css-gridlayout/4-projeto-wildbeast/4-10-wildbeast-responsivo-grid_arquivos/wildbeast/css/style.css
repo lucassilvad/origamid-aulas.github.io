@@ -1,15 +1,15 @@
 body,
-p,
 h1,
+p,
 ul,
 li,
 blockquote {
-  padding: 0px;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: 'Vollkorn', Georgia, serif;
+  font-family: "Vollkorn", Georgia, "Times New Roman", Times, serif;
 }
 
 li {
@@ -21,45 +21,51 @@ a {
 }
 
 img {
-  display: block;
   max-width: 100%;
+  height: auto;
+  display: block;
   border-radius: 5px;
 }
 
-/* GRID GERAL */
+/* Grid Geral */
 
 .estrutura {
   display: grid;
   grid-template-columns: minmax(160px, 1fr) 3fr 300px;
   grid-template-areas:
-    'header header header'
-    'sidenav content anuncios'
-    'footer footer footer';
+    "header header header"
+    "sidenav content anuncios"
+    "footer footer footer";
 }
 
 @media (max-width: 1200px) {
   .estrutura {
     grid-template-areas:
-      'header header header'
-      'sidenav content content'
-      'sidenav anuncios anuncios'
-      'footer footer footer';
+      "header header header"
+      "sidenav content content"
+      "sidenav anuncios anuncios"
+      "footer footer footer"
+      ;
   }
 }
 
 @media (max-width: 760px) {
+
+  
   .estrutura {
     grid-template-columns: 100%;
-    grid-template-areas:
-      'header'
-      'sidenav'
-      'content'
-      'anuncios'
-      'footer';
+    grid-template-areas: 
+    "header"
+    'sidenav'
+    "content"
+    "anuncios"
+    "footer"
+    ;
   }
 }
 
-/*HEADER*/
+
+/* Header */
 
 .header {
   grid-area: header;
@@ -77,13 +83,14 @@ img {
 .header nav ul {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .header nav a {
   display: block;
   padding: 10px;
   color: white;
-  font-size: 1.125em;
+  font-size: 1.125rem;
   background: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   transition: 0.1s;
@@ -92,12 +99,6 @@ img {
 .header nav a:hover {
   background: rgba(0, 0, 0, 0.5);
 }
-
-.header li + li {
-  margin-left: 30px;
-}
-
-/*SIDENAV*/
 
 .sidenav {
   grid-area: sidenav;
@@ -121,7 +122,7 @@ img {
   background: #b07dfb;
 }
 
-/*CONTENT*/
+/* CONTENT */
 
 .content {
   grid-area: content;
@@ -134,7 +135,7 @@ img {
 }
 
 .col-wide {
-  grid-column: 1 / -1;
+  grid-column: 1/-1;
 }
 
 .imagem-1 {
@@ -146,41 +147,42 @@ img {
   align-self: end;
 }
 
-/*ESTILOS CONTENT*/
+/* ESTILOS CONTENT */
 
 p {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   line-height: 1.6;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.005rem;
   color: rgba(0, 0, 0, 0.7);
 }
 
-.informacoes p + p {
+.informações p + p {
   margin-top: 30px;
 }
 
-/*TITULO*/
+/* TÍTULO */
 
 .titulo {
   color: #b07dfb;
 }
 
 .titulo h1 {
-  font-size: 3.75em;
+  font-size: 3.75rem;
   line-height: 1;
   font-weight: 700;
 }
 
 .titulo span {
-  font-size: 0.875em;
+  font-size: 0.875rem;
   font-style: italic;
 }
 
-/*CARACTERISTICAS*/
+/* CARACTERÍSTICAS */
 
 .caracteristicas {
   display: flex;
-  align-items: flex-start;
+  gap: 30px;
+  align-items: start;
 }
 
 .caracteristicas > div {
@@ -192,57 +194,52 @@ p {
   position: relative;
 }
 
-.caracteristicas > div:first-child {
-  margin-right: 30px;
-}
-
 .caracteristicas span {
   display: block;
   color: #b07dfb;
 }
 
 .numero {
-  font-size: 3em;
+  font-size: 3rem;
   line-height: 1;
   margin: 10px auto;
+  padding: 5px 0;
 }
 
 .rotulo {
   background: white;
   border-radius: 0 0 5px 5px;
-  padding: 5px 0;
   position: relative;
   top: 2px;
 }
 
 .destaque {
-  font-size: 0.875em;
+  font-size: 0.875rem;
   color: #b07dfb;
-  max-width: 16em;
+  max-width: 16rem;
 }
 
 .citacao,
 .atributos {
-  align-self: start;
   padding: 30px;
   border-radius: 5px;
-  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  box-shadow: 5px 5px 15px 0 rgba(44, 44, 44, 0.15);
   background: linear-gradient(135deg, #8844ee, #b07dfb);
+  align-self: start;
 }
 
 .citacao p {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-style: italic;
-  text-align: center;
+  margin: 0 auto;
   color: white;
   max-width: 500px;
-  margin: 0 auto;
 }
 
 .atributos li {
   color: white;
-  font-family: Courier, monospace;
-  font-size: 1.125em;
+  font-family: Courier, "Courier New", monospace;
+  font-size: 1.2rem;
   padding: 15px;
 }
 
@@ -250,18 +247,18 @@ p {
   border-top: 2px solid #b07dfb;
 }
 
-/*ANUNCIOS*/
+/* ANÚNCIOS */
 
 .anuncios {
   grid-area: anuncios;
   background: #fafbfc;
   display: grid;
-  align-content: start;
-  padding: 30px;
   gap: 30px;
+  padding: 30px;
+  align-content: start;
 }
 
-/*FOOTER*/
+/* FOOTER */
 
 .footer {
   grid-area: footer;
@@ -270,6 +267,6 @@ p {
 
 .footer p {
   color: white;
-  text-align: center;
   padding: 30px;
+  text-align: center;
 }
