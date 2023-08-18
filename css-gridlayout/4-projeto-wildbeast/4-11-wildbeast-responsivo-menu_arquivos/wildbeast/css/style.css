@@ -44,26 +44,21 @@ img {
       "header header header"
       "sidenav content content"
       "sidenav anuncios anuncios"
-      "footer footer footer"
-      ;
+      "footer footer footer";
   }
 }
 
 @media (max-width: 760px) {
-
-  
   .estrutura {
     grid-template-columns: 100%;
-    grid-template-areas: 
-    "header"
-    'sidenav'
-    "content"
-    "anuncios"
-    "footer"
-    ;
+    grid-template-areas:
+      "header"
+      "sidenav"
+      "content"
+      "anuncios"
+      "footer";
   }
 }
-
 
 /* Header */
 
@@ -100,6 +95,21 @@ img {
   background: rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 760px) {
+  .header {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+.header nav ul {
+gap: 10px;
+font-size: 1rem;
+}
+
+}
+
+/* SIDENAV */
+
 .sidenav {
   grid-area: sidenav;
   background: #fafbfc;
@@ -120,6 +130,50 @@ img {
 
 .sidenav li a:hover {
   background: #b07dfb;
+}
+
+@keyframes seta {
+  from {
+    right: 30px;
+  }
+  to {
+    right: 20px;
+  }
+}
+
+@media (max-width: 760px) {
+.sidenav {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ns-overflow-style: -ms-autohiding-scrollbar;
+  position: relative;
+}
+
+.sidenav::after {
+  content: "→";
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  color: rgba(0, 0, 0, .3);
+  animation: seta .5s ease-in 0s infinite alternate;
+}
+
+  .sidenav ul {
+    display: flex;
+    gap: 30px;
+  }
+
+  .sidenav ul li {
+    flex: 1 0 60px;
+  }
+
+  .sidenav {
+    padding: 0 30px;
+  }
+
+  .sidenav li a {
+    margin: 30px 30px 30px;
+  } 
 }
 
 /* CONTENT */
